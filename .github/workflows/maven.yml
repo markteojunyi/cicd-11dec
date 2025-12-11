@@ -63,4 +63,6 @@ jobs:
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: |
             Build and Test Status: ${{ needs.build-and-test.result }}
+            Build and Test Status: ${{ needs.snyk-scanning.result }}
+            Build and Test Status: ${{ needs.zap_scan.result }}
 
